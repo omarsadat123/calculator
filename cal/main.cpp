@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    system("color 74");
+    system("color 64");
     float x,y,result;
     char op;
     cout<< "            \n\t\t      Welcome to you\n\n\t\t   Hope that you are well.\n\n";
