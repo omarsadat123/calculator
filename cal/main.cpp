@@ -9,12 +9,12 @@ int main()
     cout<<"\t\tCan you use this calculator ?\n\n\t\t if yes, follow Next........ ";
     cout<< "\n\n\nYour Favourite number x=          ";
    cin>> x;
-    cout<< "\n enter operation (+-*/%)=          ";
+    cout<< "\n enter operation (+*-/%)=          ";
     cin>> op;
     cout<< "\nYour Favourite number y=          ";
     cin>> y;
 
-    //system("cls");
+    system("cls");
     //fflush(stdin);
     switch(op)
     {
@@ -41,10 +41,7 @@ int main()
         result=x/y;
         cout<<"                 \n\t\tRESULT  =      "<<result;
             break;
-   /*case'%':
-        result=x%y;
-        cout<<"                 \n\t\tRESULT  =        "<<result;
-            break;*/
+
 
     default:
         cout<<"                \n\t\t wrong operation ";
@@ -62,4 +59,3 @@ int main()
 
     return 0;
 }
-
