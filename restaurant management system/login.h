@@ -30,11 +30,11 @@ void login(void)
         {
             system("cls");
 
-            printf("\n\t======================================");
-            printf("\n\t=                                     =");
-            printf("\n\t=   .......Login Successful.....      =");
-            printf("\n\t=                                     =");
-            printf("\n\t=======================================");
+            printf("\n\t*=====================================*");
+            printf("\n\t*                                     *");
+            printf("\n\t*   .......Login Successful.....      *");
+            printf("\n\t*                                     *");
+            printf("\n\t*=====================================*");
             sleep(2);
             system("cls");
            splash();
