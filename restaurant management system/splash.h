@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-int main(void)
+void splash(void)
 {
 
     int item,con;
-    main:   printf("     \n\t\t    WELLCOME TO MAIN MENU.");
+    main:   printf("     \n\t\t       WELLCOME TO MAIN MENU.");
     printf("\n\t\t-------------------------------------\n");
        printf("\n\t\t <1> Breakfast");
     printf("\n\t\t <2> Snacks");
@@ -19,17 +19,9 @@ int main(void)
     case 1:
         system("cls");
         int cost=0,order,much,cost1=0,cost2=0;
-        printf("\n          -------------------------------------\n");
-          printf("                    BREAKFAST\n");
-        printf("          -------------------------------------\n\n");
-      printf("                <1> Parata            -----10\n");
-      printf("                <2> Vegetable vaggi   ----10\n");
-      printf("                <3> Alu parata       ------10\n");
-      printf("                <4> Chicken parata   ------20\n");
-      printf("                <5> Toast jam jelly    -----5\n");
-      printf("                <6> Eggs in any style  ----15\n");
-      printf("                <7> Bread + banana + jelly--20\n");
-      printf("                <8> Main menu \n");
+       design();
+
+
       printf("\n    which type of food are you want to like ? \n");
       printf("\n\n       Select your option = ");
       scanf("%d",&order);
@@ -71,17 +63,8 @@ int main(void)
  another: {
                     system("cls");
 
-         printf("\n          -------------------------------------\n");
-          printf("                    BREAKFAST\n");
-        printf("          -------------------------------------\n\n");
-      printf("                <1> Parata            -----10\n");
-      printf("                <2> Vegetable vaggi   ----10\n");
-      printf("                <3> Alu parata       ------10\n");
-      printf("                <4> Chicken parata   ------20\n");
-      printf("                <5> Toast jam jelly    -----5\n");
-      printf("                <6> Eggs in any style  ----15\n");
-      printf("                <7> Bread + banana + jelly--20\n");
-      printf("                <8> Main menu \n");
+               design();
+
       printf("\n    which type of food are you want to like ? \n");
       printf("\n\n       Select your option = ");
       scanf("%d",& order);
@@ -121,17 +104,8 @@ int main(void)
     another1:   {
                       system("cls");
 
-           printf("\n          -------------------------------------\n");
-          printf("                    BREAKFAST\n");
-        printf("          -------------------------------------\n\n");
-      printf("                <1> Parata            -----10\n");
-      printf("                <2> Vegetable vaggi   ----10\n");
-      printf("                <3> Alu parata       ------10\n");
-      printf("                <4> Chicken parata   ------20\n");
-      printf("                <5> Toast jam jelly    -----5\n");
-      printf("                <6> Eggs in any style  ----15\n");
-      printf("                <7> Bread + banana + jelly--20\n");
-      printf("                <8> Main menu \n");
+                      design();
+
       printf("\n    which type of food are you want to like ? \n");
       printf("\n\n       Select your option = ");
       scanf("%d",&order);
@@ -189,13 +163,13 @@ int main(void)
 
  abc: {     printf("\n    please insert the money into the black box");
 
-            int quantity,back;
+            int quantity,backmoney;
             printf("\n   Input money = ");
             scanf("%d",&quantity);
             if(quantity > fcost)
             {
-                back=quantity-fcost;
-                printf("    \ntake this change money %d taka",back);
+                backmoney=quantity-fcost;
+                printf("    \ntake this change money %d taka",backmoney);
                goto tbl;
             }
             if(quantity==fcost)
@@ -424,6 +398,7 @@ n:       system("cls");
 u:       system("cls");
       printf("\n  @Snacks food list      price per food\n");
     printf("    ---------------      ---------------\n");
+
     printf("\n    1.General Burger ----BDT-150");
     printf("\n    2.Chicken Burger ----BDT-200");
     printf("\n    3.pizza\t --------BDT-800");
@@ -431,7 +406,8 @@ u:       system("cls");
     printf("\n    5.Chicken fry    ----BDT-50");
     printf("\n    6.Hot coffee     ----BDT-100");
     printf("\n    7.Cold coffee    ----BDT-120");
-    printf("\n    8.Drinks(red water)--BDT-50");
+    printf("\n    8.Drinks(Red Water)--BDT-50");
+
     printf("\n\n    Sir,what types of food do you order?");
         printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your option= ");
         scanf("\n%d",&x);
@@ -469,7 +445,8 @@ l:        system("cls");
         printf("\n   sir,your food price %d taka.\n",total);
         printf("\n   please pay this %d taka.\n",total);
         // system("start https://www.youtube.com/watch?v=OeAn-DoW4f0 ");
-        printf("\n   How do you want to payment ?\n ");
+
+       printf("\n   How do you want to payment ?\n ");
         printf(" <1> Cash\n  <2> Bikash\n  <3> Dbbl card\n");
         printf("\n   **Choose your payment method** = ");
         scanf("%d",&pay);
@@ -477,8 +454,8 @@ l:        system("cls");
             goto ab;
          if(pay==2)
             goto bk;
-            if (pay==3)
-                goto db;
+         if (pay==3)
+            goto db;
 
        ab: {     printf("\n    please insert the money into the black box");
             int   quantity_money,backmoney;
@@ -495,6 +472,7 @@ l:        system("cls");
                 printf("   Thank you sir \n   your payment is completed");
                 goto tb;
             }
+
      }
 
        bk:  {
@@ -506,30 +484,35 @@ l:        system("cls");
                 printf("\n\t\t%d taka has been deducted from your balance\n",total);
                 printf("\t\t\tThank you sir your payment is completed ");
                 goto tb;
+
             }
 
        db:  {
                 int pass[5];
                 printf("\t\t\t_\n");
                 printf("please swipe your card |_| ");
-                printf("\n and enter the password = ");
+                printf("\n\n  enter the password = ");
                 scanf("%d",pass);
                 printf("<< %d >>taka has been deducted from your balance\n",total);
                 printf("Thank you sir your payment is completed ");
                 goto tb;
+
             }
 
       }
 
-  tb:  {
-
-    int table_no;
-    printf("\n\n   Sir would you please tell me your table-no = ");
+  int table_no;
+                 {
+        tb:              printf("\n\n   Sir would you please tell me your table-no = ");
     scanf("%d",&table_no);
     printf("\n   Thank you sir your order is complete.\n");
     printf("\n   Please wait a few minute and enjoy this food.\n\n");
-   }
+
+                 }
+
      break;
+
+
      case 3:
 
 

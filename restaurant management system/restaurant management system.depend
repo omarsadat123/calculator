@@ -1,5 +1,23 @@
 # depslib dependency file v1.0
-1664482069 source:c:\users\user\documents\github\calculator\restaurant management system\main.c
+1666885192 source:c:\users\user\documents\github\calculator\restaurant management system\main.c
 	<stdio.h>
 	<stdlib.h>
+	"splash.h"
+	"login.h"
+	"design.h"
+	"payment.h"
+
+1666886653 c:\users\user\documents\github\calculator\restaurant management system\splash.h
+	<stdio.h>
+
+1666883772 c:\users\user\documents\github\calculator\restaurant management system\login.h
+	<stdio.h>
+	<string.h>
+	<dos.h>
+
+1666884083 c:\users\user\documents\github\calculator\restaurant management system\design.h
+	<stdio.h>
+
+1666886657 c:\users\user\documents\github\calculator\restaurant management system\payment.h
+	<stdio.h>
 

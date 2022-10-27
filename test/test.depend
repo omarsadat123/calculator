@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1664704635 source:c:\users\user\documents\github\calculator\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"test1.h"
+
+1664700232 c:\users\user\documents\github\calculator\test\test1.h
+	<stdio.h>
+
