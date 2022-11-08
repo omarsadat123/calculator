@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1666901165 source:c:\users\user\documents\github\calculator\restaurant management system\main.c
+1667894164 source:c:\users\user\documents\github\calculator\restaurant management system\main.c
 	<stdio.h>
 	<stdlib.h>
 	"splash.h"
@@ -11,7 +11,7 @@
 	"breakfast.h"
 	"snacks.h"
 
-1666901871 c:\users\user\documents\github\calculator\restaurant management system\splash.h
+1666902342 c:\users\user\documents\github\calculator\restaurant management system\splash.h
 	<stdio.h>
 
 1666896905 c:\users\user\documents\github\calculator\restaurant management system\login.h
@@ -19,21 +19,21 @@
 	<string.h>
 	<dos.h>
 
-1666884083 c:\users\user\documents\github\calculator\restaurant management system\design.h
+1667888711 c:\users\user\documents\github\calculator\restaurant management system\design.h
 	<stdio.h>
 
-1666900935 c:\users\user\documents\github\calculator\restaurant management system\payment.h
+1667891400 c:\users\user\documents\github\calculator\restaurant management system\payment.h
 	<stdio.h>
 
-1666897215 c:\users\user\documents\github\calculator\restaurant management system\deliver.h
+1667894420 c:\users\user\documents\github\calculator\restaurant management system\deliver.h
 	<stdio.h>
 
-1666898843 c:\users\user\documents\github\calculator\restaurant management system\menu.h
+1667889162 c:\users\user\documents\github\calculator\restaurant management system\menu.h
 	<stdio.h>
 
-1666901403 c:\users\user\documents\github\calculator\restaurant management system\breakfast.h
+1667890796 c:\users\user\documents\github\calculator\restaurant management system\breakfast.h
 	<stdio.h>
 
-1666901104 c:\users\user\documents\github\calculator\restaurant management system\snacks.h
+1667894460 c:\users\user\documents\github\calculator\restaurant management system\snacks.h
 	<stdio.h>
 

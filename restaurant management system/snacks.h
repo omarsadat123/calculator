@@ -1,19 +1,13 @@
 #include<stdio.h>
 void snacks(void)
 {
-                              // payment header file
+                        // payment header file
      payment();
 
-    printf("\n\n    Sir,what types of food do you order?");
-
-
-
-
-    int x,y,price1=0,price2=0,price3=0,price4=0,
-            price5=0,con;
-    printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your food option= ");
-    scanf("\n%d",&x);
-    printf("\n   How many would you you like to have? = ");
+        int x,y,price1=0,price2=0,price3=0,price4=0,price5=0,con,total;
+    printf("\n\n  Sir,Choice your food option= ");
+    scanf("%d",&x);
+    printf("\n   How many ? = ");
     scanf("%d",&y);
     if(x==1)
         price1=price1+(150*y);
@@ -31,8 +25,10 @@ void snacks(void)
         price1=price1+(120*y);
     if(x==8)
         price1=price1+(50*y);
+
+
     printf("\n   You want to take something else!! please choose option.. ");
-    printf("\n\n   if\n     yes= 1\n     No= 2 \n\n   Choice= ");
+    printf("\n\n   if\n     yes= 1\n     No= 2 \n   Choice= ");
     scanf("%d",&con);
     if(con==1)
         goto k;
@@ -43,12 +39,12 @@ void snacks(void)
     {
 k:    system("cls");
 
-     payment();              // payment header file
+     payment();            // payment header file
 
-    printf("\n\n    Sir,what types of food do you order?");
-        printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your option= ");
+
+        printf("\n\nSir,Choice your option= ");
         scanf("\n%d",&x);
-        printf("\n   How many would you you like to have? = ");
+        printf("\n   How many ? = ");
         scanf("%d",&y);
         if(x==1)
             price2=price2+(150*y);
@@ -80,10 +76,10 @@ m:       system("cls");
 
        payment();              // payment header file
 
-    printf("\n\n    Sir,what types of food do you order?");
-        printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your option= ");
+
+        printf("\n\nSir,Choice your option= ");
         scanf("\n%d",&x);
-        printf("\n   How many would you you like to have? = ");
+        printf("\n  How many ? = ");
         scanf("%d",&y);
         if(x==1)
             price3=price3+(150*y);
@@ -115,10 +111,10 @@ n:       system("cls");
 
       payment();              // payment header file
 
-      printf("\n\n    Sir,what types of food do you order?");
-        printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your option= ");
+
+        printf("\n\nSir,Choice your option= ");
         scanf("\n%d",&x);
-        printf("\n   How many would you you like to have? = ");
+        printf("\n   How many? = ");
         scanf("%d",&y);
         if(x==1)
             price4=price4+(150*y);
@@ -151,9 +147,7 @@ u:       system("cls");
 
     payment();              // payment header file
 
-
-     printf("\n\n    Sir,what types of food do you order?");
-        printf("\n\n   1\t2\t3\t4\t5\t6\t7\t8\n\n   Sir,Choice your option= ");
+        printf("\n\nSir,Choice your option= ");
         scanf("\n%d",&x);
         printf("\n   How many would you you like to have? = ");
         scanf("%d",&y);

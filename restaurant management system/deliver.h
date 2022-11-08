@@ -13,12 +13,12 @@ void deliver(void)
     printf("enter name= ");
     scanf("%s",&person1.name);
       printf("enter phone_number= ");
-    scanf("%d",&person1.phone_number);
+    scanf("%s",&person1.phone_number);
       printf("enter address= ");
     scanf("%s",&person1.address);
 
     printf("\n\n\n Name='%s'\n",person1.name);
-    printf(" Number='%d'\n",person1.phone_number);
+    printf(" Number='%s'\n",person1.phone_number);
     printf(" Address='%s'\n",person1.address);
 
 

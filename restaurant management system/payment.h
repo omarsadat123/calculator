@@ -2,12 +2,13 @@
 void payment(void)
 {
 
+    printf("\n  _______________________________________");
+    printf("\n * @ Welcome to HUNGER PANGS restaurant @ *");
+    printf("\n * I am a Robot. Use me to do any order.  *");
+    printf("\n * -------------------------------------- *\n");
 
- printf("\n  @ Welcome to HUNGER PANGS restaurant @\n");
-    printf("\n\n   I am a Robot. Use me to do any order.\n");
-    printf("\n   list of Restaurant foods\n");
-
-    printf("\n  @Snacks food list      price per food\n");
+     printf("\n *    list of Restaurant foods     *");
+    printf("\n\n\n  @Snacks food list      price per food\n");
     printf("    ---------------      ---------------\n");
     printf("\n    1.General Burger ----BDT-150");
     printf("\n    2.Chicken Burger ----BDT-200");

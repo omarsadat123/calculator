@@ -4,18 +4,14 @@ void breakfast(void)
 
  int cost=0,order,much,cost1=0,cost2=0,con;
 
-       design();
-
-
-      printf("\n    which type of food are you want to like ? \n");
+        design();
+     printf("\n    which type of food are you want to like ? \n");
       printf("\n\n       Select your option = ");
       scanf("%d",&order);
-      if(order==8){
-            system("cls");
-
-          menu();
-
-      }
+      if(order==8)
+    {
+       splash();
+    }
 
       printf("      \t how much = ");
       scanf("%d",&much);
@@ -37,16 +33,23 @@ void breakfast(void)
 
        // int con;
      printf("      \t\t\n   You want to take something else!! please choose option.. ");
-    printf("         \t\n\n   if\n     yes= 1\n\tNo= 2 \n Main menu= 8   Choice= ");
+    printf("         \t\n\n   if\n\tyes= 1\n\tNo= 2\n\tMain menu= 8  \n\tChoice= ");
     scanf("%d",&con);
+      if (con==8)
+      {
+         splash();
+      }
      if(con==2)
-            goto last;
+         {
+                goto last;
+         }
 
     if(con==1)
-     goto another;
-      if (con==8)
-        system("cls");
-        menu();
+   {
+   goto another;
+   }
+
+
 
  another: {
                     system("cls");
@@ -84,8 +87,9 @@ void breakfast(void)
      if(con==2)
            goto last;
       if (con==8)
-        system("cls");
-         menu();
+       {
+         splash();
+       }
 
           }
 
@@ -126,8 +130,9 @@ void breakfast(void)
 
             goto last;
       if (con==8)
-        system("cls");
-        menu();
+        {
+           splash();
+        }
 
           }
 
@@ -135,6 +140,7 @@ void breakfast(void)
                int fcost,pay;
 
  last:          fcost=cost+cost1+cost2;
+
                     system("cls\n\n\n\n");
                     printf("\n   sir,your food price %d taka.\n",fcost);
         printf("\n   please pay this %d taka.\n",fcost);
@@ -157,7 +163,7 @@ void breakfast(void)
             if(quantity > fcost)
             {
                 backmoney=quantity-fcost;
-                printf("    \ntake this change money %d taka",backmoney);
+                printf("    \n    take this change money %d taka",backmoney);
                goto tbl;
             }
             if(quantity==fcost)
@@ -196,6 +202,7 @@ void breakfast(void)
     int table_no;
     printf("\n\n   Sir would you please tell me your table-no = ");
     scanf("%d",&table_no);
+    system("cls");
     printf("\n   Thank you sir your order is complete.\n");
     printf("\n   Please wait a few minute and enjoy this food.\n\n");
    }
