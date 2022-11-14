@@ -12,8 +12,8 @@
 int main(void)
 {
     deliver();
-  //  snacks();
-  //  login();
+  /* snacks();
+  //  login();*/
 
 
 
